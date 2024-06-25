@@ -1,0 +1,13 @@
+.footer {
+	background-color: #e9ded4;
+}
+
+.footer__content-container {
+	padding-top: 40px;
+	padding-bottom: 72px;
+}
+
+.footer__text {
+	color: rgba(49, 49, 49, 0.6);
+	line-height: 1.2;
+}

@@ -1,0 +1,130 @@
+.participants__content-container {
+	padding-bottom: 140px;
+}
+
+.participants__slider {
+	position: relative;
+}
+
+.participants__nav {
+	position: absolute;
+    right: 0;
+    top: -115px;
+	display: flex;
+}
+
+.participants__nav-count {
+	margin: 0 14px;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.participants__nav-count-delimiter {
+	padding: 0 3px;
+	color: rgba(49, 49, 49, 0.6);
+}
+
+[data-count="total"] {
+	color: rgba(49, 49, 49, 0.6);
+}
+
+.participants__nav-btn {
+	width: 44px;
+	height: 44px;
+	background-repeat: no-repeat;
+	border-radius: 100%;
+}
+
+.participants__prev-btn {
+	background-image: url('../../images/arrow-prev.png');
+	background-position: top 50% left 42%;
+}
+
+.participants__next-btn {
+	background-image: url('../../images/arrow-next.png');
+	background-position: top 50% right 42%;
+}
+
+.participants__cards {
+	overflow: hidden;
+}
+
+.participants__cards-inner {
+	width: max-content;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.participants__card {
+	display: flex;
+    -webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+    width: 100%;
+	max-width: 394px;
+	flex-shrink: 0;
+}
+
+.participants__card + .participants__card {
+	margin-left: 20px;
+}
+
+.participants__card-image {
+	margin-bottom: 28px;
+}
+
+.participants__card-title {
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 6px;
+	text-align: center;
+}
+
+.participants__card-subtitle {
+	font-size: 20px;
+	line-height: 1.2;
+	color: rgba(49, 49, 49, 0.6);
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.participants__card-button {
+	border: 1px solid #3057a2;
+	color: #3057a2;
+}
+
+.participants__card-button:hover {
+	background-color: #3057a2;
+	color: #ffffff;
+}
+
+
+@media (max-width: 1279px) {
+
+	.participants__card {
+		max-width: 294px;
+		padding: 0 15px;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.participants__content-container {
+		padding-bottom: 100px;
+	}
+
+	.participants__nav {
+		position: static;
+		-webkit-justify-content: center;
+		justify-content: center;
+		margin-top: 40px;
+	}
+
+}
